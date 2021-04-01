@@ -1,64 +1,160 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Elelemtos Flutuantes</title>
-	<meta charset="utf-8">
+	<head>
+		<title>Elelemtos Flutuantes na prática</title>
+		<meta charset="utf-8">
 
-	<style type="text/css">
+		<style type="text/css">
 
-		#principal{
-			border: 1px solid red;
-			background: green;
-		}
+			body{
+				background: #f4f4f4;
+			}
+
+			#principal {
+				width: 920px;
+				border: 2px solid red;
+			}
+
+			.noticia {
+				background: #e5e5e5;
+				padding: 5px;
+				width: 280px;
+				margin: 5px;
+				float: left;
+			}
+
+			.imagem-galeria{
+				background: white;
+				width: 280px;
+				padding: 5px;
+				float: left;
+			}
+
+			.clear{
+				clear: both;
+			}
+
+
+			/*#principal{
+				border: 1px solid red;
+				background: green;
+			}
+			
+			.conteudo{
+				background: blue;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				float: left;
+			}
+
+			.conteudo1{
+				background: red;
+				border: 1px solid gray;
+				width: 200px;
+				height: 200px;
+				margin: 10px;
+				float: right;
+			}
+
+			.clear{
+				clear: left; limpa fluxo a esquerda
+				clear: right; limpa o fluxo a direita
+				clear: both; Limpa o fuxo em amnos
+			}*/
+
+		</style>
+	</head>
+	<body>
 		
-		.conteudo{
-			background: blue;
-			border: 1px solid gray;
-			width: 200px;
-			height: 200px;
-			margin: 10px;
-			float: left;
-		}
+		<div id="principal"><!-- inicio principal -->
 
-		/*.conteudo1{
-			background: red;
-			border: 1px solid gray;
-			width: 200px;
-			height: 200px;
-			margin: 10px;
-			float: right;
-		}*/
+			<div><!-- inicio noticias -->
+				
+				<div class="noticia">
+					<h2>Una traducción inglesa de 1914 por Harris Rackham lee1:</h2>
+					<p>
+						“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+					</p>
+					<a href="">Veja mais</a>
+				</div><!-- fim noticia1 -->
 
-		.clear{
-			/*clear: left; limpa fluxo a esquerda*/
-			/*clear: right; limpa o fluxo a direita*/
-			clear: both; /*Limpa o fuxo em amnos*/
-		}
+				<div class="noticia">
+					<h2>Una traducción inglesa de 1914 por Harris Rackham lee2:</h2>
+					<p>
+						“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+					</p>
+					<a href="">Veja mais</a>
+				</div><!-- fim noticia2 -->
 
-	</style>
-</head>
-<body>
-	<div id="principal">
-		<div class="conteudo">
-			Conteudo 1
-		</div>
+				<div class="noticia">
+					<h2>Una traducción inglesa de 1914 por Harris Rackham lee3:</h2>
+					<p>
+						“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+					</p>
+					<a href="">Veja mais</a>
+				</div><!-- fim noticia3 -->
 
-		<div class="conteudo">
-			Conteudo 2
-		</div>
+			</div><!-- fim noticia -->
 
-		<div class="conteudo">
-			Conteudo 3
-		</div>
+			<div class="clear"></div>
 
-		<div class="clear"></div>
+			<div><!-- inicio fotos -->
+				
+				<div class="imagem-galeria">
+					<img src="imagens/imagem1.png">
+					<p>Resumo1</p>
+				</div>
 
-		<p>
-			As an alternative theory, (and because Latin scholars do this sort of thing) someone tracked down a 1914 Latin edition of De Finibus which challenges McClintock's 15th century claims and suggests that the dawn of lorem ipsum was as recent as the 20th century. The 1914 Loeb Classical Library Edition ran out of room on page 34 for the Latin phrase “dolorem ipsum” (sorrow in itself). Thus, the truncated phrase leaves one page dangling with “do-”, while another begins with the now ubiquitous “lorem ipsum”.
-		</p>
-	</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem2.png">
+					<p>Resumo2</p>
+				</div>
 
-	
+				<div class="imagem-galeria">
+					<img src="imagens/imagem3.png">
+					<p>Resumo3</p>
+				</div>
 
-</body>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem4.png">
+					<p>Resumo4</p>
+				</div>
+
+				<div class="imagem-galeria">
+					<img src="imagens/imagem5.png">
+					<p>Resumo5</p>
+				</div>
+
+			</div><!-- Fim fotos -->
+			<div class="clear"></div>
+
+		</div><!-- fim principal -->
+
+
+
+		<!--<div id="principal">
+			<div class="conteudo">
+				Conteudo 1
+			</div>
+
+			<div class="conteudo">
+				Conteudo 2
+			</div>
+
+			<div class="conteudo">
+				Conteudo 3
+			</div>
+
+			<div class="clear"></div>
+
+			<p>
+				As an alternative theory, (and because Latin scholars do this sort of thing) someone tracked down a 1914 Latin edition of De Finibus which challenges McClintock's 15th century claims and suggests that the dawn of lorem ipsum was as recent as the 20th century. The 1914 Loeb Classical Library Edition ran out of room on page 34 for the Latin phrase “dolorem ipsum” (sorrow in itself). Thus, the truncated phrase leaves one page dangling with “do-”, while another begins with the now ubiquitous “lorem ipsum”.
+			</p>
+		</div>-->
+
+		
+
+	</body>
 </html>
